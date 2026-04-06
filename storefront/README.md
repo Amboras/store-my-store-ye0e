@@ -19,19 +19,23 @@ Before you begin, ensure you have:
 
 - Node.js 18+ installed
 - A Medusa backend running (default: `http://localhost:9000`)
-- npm, yarn, or pnpm package manager
+- [Bun](https://bun.sh) package manager (recommended) or npm/yarn/pnpm
 
 ## Getting Started
 
 ### 1. Install Dependencies
 
 ```bash
+bun install
+# or
 npm install
 # or
 yarn install
 # or
 pnpm install
 ```
+
+> **Note:** This project uses Bun for faster installs and builds. If you don't have Bun installed, get it from [bun.sh](https://bun.sh)
 
 ### 2. Configure Environment Variables
 
@@ -50,6 +54,8 @@ NEXT_PUBLIC_MEDUSA_BACKEND_URL=http://localhost:9000
 ### 3. Start the Development Server
 
 ```bash
+bun run dev
+# or
 npm run dev
 # or
 yarn dev
@@ -204,30 +210,26 @@ export function AddToCart() {
 ### Build the Application
 
 ```bash
+bun run build
+# or
 npm run build
-# or
-yarn build
-# or
-pnpm build
 ```
 
 ### Start the Production Server
 
 ```bash
+bun run start
+# or
 npm run start
-# or
-yarn start
-# or
-pnpm start
 ```
 
 ## Scripts
 
-- `npm run dev` - Start development server on port 3000
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run type-check` - Run TypeScript type checking
-- `npm run lint` - Run ESLint
+- `bun run dev` - Start development server on port 3000
+- `bun run build` - Build for production
+- `bun run start` - Start production server
+- `bun run type-check` - Run TypeScript type checking
+- `bun run lint` - Run ESLint
 
 ## Environment Variables
 
