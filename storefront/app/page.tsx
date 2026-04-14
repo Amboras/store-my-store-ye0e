@@ -37,7 +37,7 @@ export default function HomePage() {
               New Collection
             </p>
             <h1 className="text-display font-heading font-semibold text-balance">
-              Elevate Your Everyday
+              Happy Coding
             </h1>
             <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
               Thoughtfully designed products that bring beauty and function to your daily rituals.
